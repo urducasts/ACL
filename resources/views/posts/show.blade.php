@@ -6,7 +6,7 @@
 <body>
 	<h1>{{ $post->title }}</h1>
 
-	@can('update-post', $post)
+	@can('update', $post)
 		<a href="#">Update This Post</a>
 	@endcan
 </body>

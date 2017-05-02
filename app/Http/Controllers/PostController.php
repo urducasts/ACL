@@ -10,7 +10,7 @@ class PostController extends Controller
 {
 	public function show(Post $post)
 	{
-		// auth()->loginUsingId(1);
+		auth()->loginUsingId(1);
 		// auth()->logout();
 		return view('posts.show', compact('post'));
 	}
